@@ -7,7 +7,7 @@ const productSchema = new Schema({
         type: String,
         required: true,
         unique: false,
-        maxlength: 150,
+        maxlength: 50,
     },
     amount: {
         type: Number,
@@ -16,6 +16,23 @@ const productSchema = new Schema({
     price: {
         type: Number,
         required: true,
+    },
+    description: {
+        type: String,
+        maxlength: 150,
+    },
+    url: {
+        type: String,
+        unique: false
+    },
+    imagename: {
+        type: String,
+        unique: false,
+        maxlength: 100,
+    },
+    location: {
+        type: String,
+        unique: false
     },
 },
     {

@@ -9,8 +9,6 @@ const express = require("express"),
   multer = require('multer'),
   upload = multer({ dest: 'uploads/' });
 
-const { processFileMiddleware, processFileArrayMiddleware } = require("./configs/middleware");
-
 dotenv.config();
 const uri = process.env.URL_MONGODB;
 
